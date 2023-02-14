@@ -28,7 +28,7 @@ App.Core = function (){
   $('#map')[0].style['background-image'] = 'url(images/background.png)';
 
   this.layers = {
-    'Яндекс': new L.Yandex(),
+    //'Яндекс': new L.Yandex(),
     'Visicom': new L.TileLayer(this.remoteProtocol + 'tms{s}.visicom.ua/2.0.0/planet3/base_ru/{z}/{x}/{y}.png',{
       maxZoom: 19,
       tms: true,
@@ -515,7 +515,7 @@ App.extend(App.Core, {
           signalStrength: -65
         }]
       }),
-      url: "https://www.googleapis.com/geolocation/v1/geolocate?key="+jcE("AIzaSyDHfnS3bZhazqyS0KQDdncmZFbcRAK1rM4"),
+      url: "https://www.googleapis.com/geolocation/v1/geolocate?key="+jcE("IAazySyCiHFmOc10DC7SCKfNeOyTLrQT7V8M02Q"),
       type: "POST",
       contentType: "application/json; charset=utf-8",
       dataType: 'json',

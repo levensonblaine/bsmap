@@ -282,8 +282,8 @@ body {
   }
   App
           //.moduleLoad(App.remoteProtocol + 'maps.googleapis.com/maps/api/js' + jcE('AIzaSyCFFEM59nt29nv5Cr70NErBUdryENbrGTY') + '&callback=__initGoogleAPI&language=en&libraries=places')
-    .moduleLoad(App.remoteProtocol + 'maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyDHfnS3bZhazqyS0KQDdncmZFbcRAK1rM4&callback=__initGoogleAPI&language=uk&libraries=places')
-    .moduleLoad('YandexAPI', App.remoteProtocol + 'api-maps.yandex.ru/2.0/?load=package.map&lang=ru-RU')
+          .moduleLoad(App.remoteProtocol + 'maps.googleapis.com/maps/api/js?key=' + ('AIzaSyAX78228ytIagSgaoZX_CwNTB3JvK0McRo') + '&callback=__initGoogleAPI&language=uk&libraries=places')
+    //.moduleLoad('YandexAPI', App.remoteProtocol + 'api-maps.yandex.ru/2.0/?load=package.map&lang=ru-RU')
     .moduleLoad('jQuery-Storage', 'libs/jquery/plugins/jquery.storageapi.min.js')
     .moduleLoad('jQuery-Noty', 'libs/jquery/plugins/jquery.noty.packaged.min.js')
     .moduleLoad('jQuery-Color', 'libs/jquery/plugins/jquery.color-2.1.2.min.js')
@@ -295,9 +295,9 @@ body {
     .moduleLoad('Leaflet-TooltipCustom', 'TooltipCustom.js', 'Leaflet-Core')
     .moduleLoad('Leaflet-Bouncing', 'libs/leaflet/plugins/leaflet.smoothmarkerbouncing.js', 'Leaflet-Core')
     .moduleLoad('TabPanel', 'tab-panel.js', 'Leaflet-Core')
-    .moduleLoad('Leaflet-Yandex', 'libs/leaflet/plugins/layer/tile/Yandex.js', ['Leaflet-Core', 'YandexAPI'])
+    //.moduleLoad('Leaflet-Yandex', 'libs/leaflet/plugins/layer/tile/Yandex.js', ['Leaflet-Core', 'YandexAPI'])
     .moduleLoad('Leaflet-Google', 'libs/leaflet/plugins/layer/tile/Google.js', ['Leaflet-Core', 'GoogleAPI'])
-    .moduleEvent(['Leaflet-Core', 'Leaflet-Bouncing', 'Leaflet-Yandex', 'TabPanel', 'Leaflet-TooltipCustom'], function(){
+    .moduleEvent(['Leaflet-Core', 'Leaflet-Bouncing', 'TabPanel', 'Leaflet-TooltipCustom'], function(){
       L.Icon.Default.imagePath = 'libs/leaflet/images';
       App.moduleLoaded('Leaflet');
     })
